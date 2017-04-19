@@ -17,6 +17,16 @@ O sistema está em fase de testes portanto é recomendado o uso das tecnologias 
 * Java Server Faces - JSF
 * Framework PrimeFaces
 ***
+## Clonando projeto via linha de comando
+Para colaborar com o projeto, primeriro clone.
+```
+git clone https://github.com/dionatanmelo/SoccerMannager.git
+cd SoccerMannager
+```
+Após entre na branch de desenvolvimento 
+```
+git checkout nomedobranch
+```
 ## Documentação adicional
 * [Manual do GitHub](http://rogerdudler.github.io/git-guide/index.pt_BR.html)
 * [Sobre o Maven](https://maven.apache.org/)
