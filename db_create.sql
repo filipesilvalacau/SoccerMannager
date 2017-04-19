@@ -3,7 +3,7 @@ CREATE DATABASE soccer_manager;
 USE soccer_manager;
 
 CREATE TABLE `account` (
-  `id_account` int(11) NOT NULL,
+  `id_account` INTEGER PRIMARY KEY AUTO_INCREMENT,
   `balance` decimal(5,2) DEFAULT NULL,
   `id_client` int(11) DEFAULT NULL,
   `id_employee` int(11) DEFAULT NULL
@@ -12,7 +12,7 @@ CREATE TABLE `account` (
 
 
 CREATE TABLE `client` (
-  `id_client` int(11) NOT NULL,
+  `id_client` INTEGER PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(150) DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
   `cpf` varchar(13) DEFAULT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE `client` (
 
 
 CREATE TABLE `court` (
-  `id_court` int(11) NOT NULL,
+  `id_court` INTEGER PRIMARY KEY AUTO_INCREMENT,
   `type` varchar(45) DEFAULT NULL,
   `price` decimal(5,2) DEFAULT NULL,
   `name` varchar(45) DEFAULT NULL
@@ -31,7 +31,7 @@ CREATE TABLE `court` (
 
 
 CREATE TABLE `employee` (
-  `id_employee` int(11) NOT NULL,
+  `id_employee` INTEGER PRIMARY KEY AUTO_INCREMENT,
   `name` varchar(150) DEFAULT NULL,
   `address` varchar(255) DEFAULT NULL,
   `cpf` varchar(13) DEFAULT NULL,
@@ -49,7 +49,7 @@ CREATE TABLE `phone` (
 
 
 CREATE TABLE `rental` (
-  `id_rental` int(11) NOT NULL,
+  `id_rental` INTEGER PRIMARY KEY AUTO_INCREMENT,
   `rental_date` date DEFAULT NULL,
   `hour` time DEFAULT NULL,
   `fee` decimal(5,2) DEFAULT NULL,
